@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vue JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="a in asean">{{ a.country }} - {{ a.capital}}</li>
+        </ul>
+    </div>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                asean: [
+    { country: "Indonesia", capital:"Jakarta" },
+    { country: "Malaysia", capital:"Kuala Lumpur" },
+    { country: "Singapore", capital:"Singapore" },
+    { country: "Brunei Darussalam", capital:"Bandar Seri Begawan" },
+    { country: "Laos", capital:"Vientiane" },
+    { country: "Cambodia", capital:"Phnom Penh" },
+    { country: "Myanmar", capital:"Naypyitaw" },
+    { country: "Philippines", capital:"Manila" },
+    { country: "Thailand", capital:"Bangkok" },
+    { country: "Vietnam", capital:"Hanoi "}
+  ]
+
+            }
+        })
+    </script>
+</body>
+</html>
